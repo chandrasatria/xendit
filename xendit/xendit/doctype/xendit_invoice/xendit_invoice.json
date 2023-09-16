@@ -1,0 +1,258 @@
+{
+ "actions": [],
+ "autoname": "XInv-.######",
+ "creation": "2019-10-29 15:38:12.182680",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_information",
+  "user",
+  "payer_email",
+  "status",
+  "column_break_5",
+  "description",
+  "invoice_url",
+  "expiry_date",
+  "merchant_name",
+  "external_document",
+  "external_doctype",
+  "external_id",
+  "payment_information",
+  "payment_method",
+  "payment_channel",
+  "payment_destination",
+  "amount",
+  "paid_amount",
+  "column_break_13",
+  "paid_at",
+  "fees_paid_amount",
+  "adjusted_received_amount",
+  "bank_information",
+  "bank_code",
+  "retail_information",
+  "retail_outlet_name",
+  "xendit_bridge",
+  "xendit_id",
+  "credit_card_charge_id",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_information",
+   "fieldtype": "Section Break",
+   "label": "General Information"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fetch_from": "user.email",
+   "fieldname": "payer_email",
+   "fieldtype": "Data",
+   "label": "Payer E-Mail"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "invoice_url",
+   "fieldtype": "Data",
+   "label": "Invoice URL"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "merchant_name",
+   "fieldtype": "Data",
+   "label": "Merchant Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "external_document",
+   "fieldtype": "Section Break",
+   "label": "External Document"
+  },
+  {
+   "fieldname": "external_doctype",
+   "fieldtype": "Link",
+   "label": "External Doctype",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "external_id",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "External ID",
+   "options": "external_doctype"
+  },
+  {
+   "fieldname": "payment_information",
+   "fieldtype": "Section Break",
+   "label": "Payment Information"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "payment_method",
+   "fieldtype": "Data",
+   "label": "Payment Method",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "payment_channel",
+   "fieldtype": "Data",
+   "label": "Payment Channel",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "payment_destination",
+   "fieldtype": "Data",
+   "label": "Payment Destination",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "paid_at",
+   "fieldtype": "Datetime",
+   "label": "Paid At",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "fees_paid_amount",
+   "fieldtype": "Currency",
+   "label": "Fees Paid Amount",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "adjusted_received_amount",
+   "fieldtype": "Currency",
+   "label": "Adjusted Received Amount",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.bank_code",
+   "fieldname": "bank_information",
+   "fieldtype": "Section Break",
+   "label": "Bank Information"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "bank_code",
+   "fieldtype": "Data",
+   "label": "Bank Code",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.retail_outlet_name",
+   "fieldname": "retail_information",
+   "fieldtype": "Section Break",
+   "label": "Retail Information"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "retail_outlet_name",
+   "fieldtype": "Data",
+   "label": "Retail Outlet Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "xendit_bridge",
+   "fieldtype": "Section Break",
+   "label": "Xendit Bridge"
+  },
+  {
+   "fieldname": "xendit_id",
+   "fieldtype": "Data",
+   "label": "Xendit ID"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "credit_card_charge_id",
+   "fieldtype": "Data",
+   "label": "Credit Card Charge ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Xendit Invoice",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "expiry_date",
+   "fieldtype": "Data",
+   "label": "Expiry Date",
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-01-04 15:54:20.604591",
+ "modified_by": "Administrator",
+ "module": "Xendit",
+ "name": "Xendit Invoice",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "user",
+ "track_changes": 1
+}

@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include xendit *.css
+recursive-include xendit *.csv
+recursive-include xendit *.html
+recursive-include xendit *.ico
+recursive-include xendit *.js
+recursive-include xendit *.json
+recursive-include xendit *.md
+recursive-include xendit *.png
+recursive-include xendit *.py
+recursive-include xendit *.svg
+recursive-include xendit *.txt
+recursive-exclude xendit *.pyc

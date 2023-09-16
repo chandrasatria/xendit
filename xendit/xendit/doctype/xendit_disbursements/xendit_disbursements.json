@@ -1,0 +1,253 @@
+{
+ "autoname": "XDisb-.######",
+ "creation": "2020-08-27 09:41:59.159190",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_information_section",
+  "user",
+  "user_id",
+  "status",
+  "request_on",
+  "column_break_5",
+  "description",
+  "external_document_section",
+  "external_doctype",
+  "external_id",
+  "payment_information_section",
+  "bank_code",
+  "account_number",
+  "account_holder_name",
+  "column_break_14",
+  "amount",
+  "email_information_section",
+  "request_email_to",
+  "disbursements_callback_information_section",
+  "callback_on",
+  "failure_code",
+  "transaction_id",
+  "transaction_sequence",
+  "disbursement_id",
+  "column_break_24",
+  "is_instant",
+  "success_email_to",
+  "xendit_bridge_section",
+  "xendit_id",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_information_section",
+   "fieldtype": "Section Break",
+   "label": "General Information"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "user_id",
+   "fieldtype": "Data",
+   "label": "User ID",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "external_document_section",
+   "fieldtype": "Section Break",
+   "label": "External Document"
+  },
+  {
+   "fieldname": "external_doctype",
+   "fieldtype": "Link",
+   "label": "External Doctype",
+   "options": "DocType"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "external_id",
+   "fieldtype": "Dynamic Link",
+   "label": "External ID",
+   "options": "external_doctype",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payment_information_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Information"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "bank_code",
+   "fieldtype": "Data",
+   "label": "Bank Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "account_number",
+   "fieldtype": "Data",
+   "label": "Account Number"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "account_holder_name",
+   "fieldtype": "Data",
+   "label": "Account Holder Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "xendit_bridge_section",
+   "fieldtype": "Section Break",
+   "label": "Xendit Bridge"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "xendit_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Xendit ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Xendit Disbursements",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "email_information_section",
+   "fieldtype": "Section Break",
+   "label": "Email Information"
+  },
+  {
+   "fieldname": "request_on",
+   "fieldtype": "Datetime",
+   "label": "Request On"
+  },
+  {
+   "fieldname": "request_email_to",
+   "fieldtype": "HTML Editor",
+   "label": "Email To"
+  },
+  {
+   "fieldname": "disbursements_callback_information_section",
+   "fieldtype": "Section Break",
+   "label": "Disbursements Callback Information"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "failure_code",
+   "fieldtype": "Data",
+   "label": "Failure Code",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "success_email_to",
+   "fieldtype": "HTML Editor",
+   "label": "Success Email To",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "transaction_id",
+   "fieldtype": "Data",
+   "label": "Transaction ID",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "transaction_sequence",
+   "fieldtype": "Data",
+   "label": "Transaction Sequence",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "disbursement_id",
+   "fieldtype": "Data",
+   "label": "Disbursement ID",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "is_instant",
+   "fieldtype": "Check",
+   "label": "Is Instant",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "callback_on",
+   "fieldtype": "Datetime",
+   "label": "Callback On",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "is_submittable": 1,
+ "modified": "2020-08-27 13:57:22.154553",
+ "modified_by": "Administrator",
+ "module": "Xendit",
+ "name": "Xendit Disbursements",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "user",
+ "track_changes": 1
+}

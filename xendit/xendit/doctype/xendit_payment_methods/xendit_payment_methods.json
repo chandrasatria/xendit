@@ -1,0 +1,96 @@
+{
+ "autoname": "field:payment_method",
+ "creation": "2020-08-07 16:23:28.369260",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "payment_method",
+  "enabled",
+  "category",
+  "view_order",
+  "minimal_order",
+  "payment_method_value",
+  "fee_calculation",
+  "fee_example",
+  "image"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Xendit Payment Category"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Payment Method",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "payment_method_value",
+   "fieldtype": "Data",
+   "label": "Payment Method Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fee_calculation",
+   "fieldtype": "Text",
+   "label": "Fee Calculation"
+  },
+  {
+   "fieldname": "fee_example",
+   "fieldtype": "HTML",
+   "label": "Fee Example"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "default": "1",
+   "fieldname": "view_order",
+   "fieldtype": "Int",
+   "label": "View Order"
+  },
+  {
+   "fieldname": "minimal_order",
+   "fieldtype": "Currency",
+   "label": "Minimal Order",
+   "reqd": 1
+  }
+ ],
+ "image_field": "image",
+ "modified": "2020-10-14 17:54:49.606152",
+ "modified_by": "Administrator",
+ "module": "Xendit",
+ "name": "Xendit Payment Methods",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

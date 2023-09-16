@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "creation": "2019-10-22 09:06:17.590195",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "api_key",
+  "callback_token",
+  "time_info_section",
+  "expired_time_in_seconds"
+ ],
+ "fields": [
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Small Text",
+   "label": "API Key"
+  },
+  {
+   "fieldname": "callback_token",
+   "fieldtype": "Small Text",
+   "label": "Callback Token"
+  },
+  {
+   "fieldname": "time_info_section",
+   "fieldtype": "Section Break",
+   "label": "Time Info"
+  },
+  {
+   "default": "86400",
+   "fieldname": "expired_time_in_seconds",
+   "fieldtype": "Int",
+   "label": "Expired Time (in seconds)"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2021-01-04 14:22:50.602652",
+ "modified_by": "Administrator",
+ "module": "Xendit",
+ "name": "Xendit Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

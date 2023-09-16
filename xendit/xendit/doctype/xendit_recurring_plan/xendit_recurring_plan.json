@@ -1,0 +1,114 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "autoname": "format:XRP{MM}{###}{DD}{YY}",
+ "creation": "2023-03-10 13:16:42.112144",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "plan_id",
+  "reference_id",
+  "customer_id",
+  "schedule_id",
+  "url"
+ ],
+ "fields": [
+  {
+   "fieldname": "plan_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Plan ID"
+  },
+  {
+   "fieldname": "reference_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Reference ID"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer ID"
+  },
+  {
+   "fieldname": "schedule_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Schedule ID"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Text",
+   "label": "URL"
+  },
+  {
+   "default": "Active",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\nActive\nInactive"
+  }
+ ],
+ "hide_toolbar": 1,
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-10 13:53:52.478547",
+ "modified_by": "Administrator",
+ "module": "Xendit",
+ "name": "Xendit Recurring Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Xendit Recurring Plan Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Xendit Recurring Plan User",
+   "write": 1
+  },
+  {
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Xendit Recurring Plan Viewer"
+  }
+ ],
+ "search_fields": "reference_id",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "reference_id"
+}

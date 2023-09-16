@@ -1,0 +1,62 @@
+[
+ {
+  "category": "Virtual Accounts",
+  "docstatus": 0,
+  "doctype": "Xendit Payment Category",
+  "enabled": 1,
+  "image": "/files/transfer.png",
+  "modified": "2020-08-12 08:32:51.492489",
+  "name": "Virtual Accounts",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category": "Retail Outlets",
+  "docstatus": 0,
+  "doctype": "Xendit Payment Category",
+  "enabled": 1,
+  "image": "/files/retail.png",
+  "modified": "2020-08-12 08:31:33.932282",
+  "name": "Retail Outlets",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category": "eWallets",
+  "docstatus": 0,
+  "doctype": "Xendit Payment Category",
+  "enabled": 1,
+  "image": "/files/ewallet.png",
+  "modified": "2020-08-12 08:30:39.358750",
+  "name": "eWallets",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category": "Cards",
+  "docstatus": 0,
+  "doctype": "Xendit Payment Category",
+  "enabled": 1,
+  "image": "/files/payment.png",
+  "modified": "2020-08-12 08:29:36.284916",
+  "name": "Cards",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "category": "Qr Codes",
+  "docstatus": 0,
+  "doctype": "Xendit Payment Category",
+  "enabled": 1,
+  "image": "/files/qr-code.png",
+  "modified": "2020-08-12 08:30:06.879739",
+  "name": "Qr Codes",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]
